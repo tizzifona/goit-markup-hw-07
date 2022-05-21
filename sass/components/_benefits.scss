@@ -1,0 +1,31 @@
+.benefits__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $main-text-color;
+    margin-bottom: 10px;
+}
+
+.benefits__text {
+    line-height: 1.71;
+    color: $second-text-color;
+    width: 270px;
+}
+
+.benefits__list {
+    display: flex;
+}
+
+.benefits__list li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.benefits__icon {
+    @include CenteredFlex (flex);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: $light-grey-bg;
+    border-radius: 4px;
+}

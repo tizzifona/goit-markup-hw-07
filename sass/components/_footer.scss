@@ -1,0 +1,120 @@
+footer {
+    background-color: $dark-bg;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer a {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: $address-text-color;
+    text-decoration: none;
+    margin-bottom: 9px;
+}
+
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.address-list__item {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    color: $white-text-color;
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.join-btns {
+    margin-left: 70px;
+}
+
+.join-btns__title {
+    display: block;
+    text-transform: uppercase;
+    color: $white-text-color;
+    /* margin-left: 156px; */
+    margin-bottom: 20px;
+}
+
+.join-btns__list {
+    display: flex;
+}
+
+.join-btns__link {
+    @include CenteredFlex (flex);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $white-text-color;
+    background-color: $social-button-bg;
+    cursor: pointer;
+    margin-bottom: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.join-btns__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    margin-left: 93px;
+}
+
+.subscribe__title {
+    display: block;
+    text-transform: uppercase;
+    color: $white-text-color;
+}
+
+.subscribe__form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.subscribe__button {
+    @include CenteredFlex (flex);
+    cursor: pointer;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: $white-text-color;
+}
+
+.subscribe__icon {
+    margin-left: 10px;
+}
+
+.subscribe__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: $dark-bg;
+    color: $white-text-color;
+    padding-left: 16px;
+}

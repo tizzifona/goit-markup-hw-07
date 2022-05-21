@@ -1,0 +1,62 @@
+.command {
+    background-color: $light-grey-bg;
+}
+
+.command__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    columns: $main-text-color;
+    margin-bottom: 10px;
+}
+
+.command__profession {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: $second-text-color;
+    margin-bottom: 16px;
+}
+
+.command__item {
+    background-color: $white-bg;
+    width: 270px;
+    margin-right: 30px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px $shadow-color1, 0px 1px 1px $shadow-color2,
+        0px 2px 1px $shadow-color3;
+}
+
+.command__photo {
+    margin-bottom: 30px;
+}
+
+.command__list {
+    display: flex;
+}
+
+.social-media {
+    @include CenteredFlex (flex);
+    margin-bottom: 30px;
+}
+
+.social-media__link {
+    @include CenteredFlex (flex);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $social-icons;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: $white-text-color;
+    }
+}
+
+.social-media__buttons:not(:last-child) {
+    margin-right: 10px;
+}
